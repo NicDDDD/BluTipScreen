@@ -1,5 +1,8 @@
 
 # Question 1: 
+# For this question, I thought it easiest to iterate through the string and just replace
+# the letters with numbers as I go. This meant creating case statements (if, else in python as it doesn't
+# support case statements)
 
 def leetTransform(stringToChange):
     finalString = ''
@@ -27,6 +30,9 @@ print(stringTest)
 leetTransform(stringTest)
 
 # Question 2:
+# Basically, a counter is used to increment by 1 any time we encounter a letter that is equal to the previous
+# one as we iterate through the string. Once the previous letter is not equal to the current one, we add that letter and the counter plus 1 to
+# account for the first instance of the letter.
 
 def countRepeats(stringToCount):
     count = 0
@@ -51,4 +57,7 @@ def countRepeats(stringToCount):
 anotherString = "aaabbdcccccffffghklmnoppppkl"
 print(anotherString)
 countRepeats(anotherString)
+
+# In Both questions, a new string was generated because Python does not allow the original string to be
+# changed as python strings are immutable by design
 
